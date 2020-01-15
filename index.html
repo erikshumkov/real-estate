@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">real estate app</a>
+        </div>
+
+        <ul class="menu">
+          <li>Sök bostad</li>
+          <li>Sälja bostad</li>
+          <li>Hitta mäklare</li>
+        </ul>
+      </div>
+    </header>
+
+    <div id="filter-section">
+      <div class="wrapper">
+        <div class="filter-search">
+          <form>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Sök på område"
+            />
+          </form>
+        </div>
+        <div class="filter-menu">
+          <div class="filter-box">
+            <i class="fas fa-home"></i>
+            villa
+          </div>
+          <div class="filter-box">
+            <i class="far fa-building"></i>
+            lägenhet
+          </div>
+          <div class="filter-box">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-home"></i>
+            radhus
+          </div>
+          <div class="filter-box">
+            <i class="fas fa-umbrella-beach"></i>
+            fritidshus
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="results">
+      <div class="wrapper">
+        <p><span>500</span> bostäder till salu</p>
+        <select name="" id="select-filter">
+          <option value="new">Nyast</option>
+          <option value="low">Lägst pris</option>
+          <option value="high">Högst pris</option>
+        </select>
+
+        <div class="results-grid">
+          <div class="result">
+            <div class="image">
+              <div class="img"></div>
+            </div>
+            <div class="info">
+              <h5>Bromma</h5>
+              <h2>Villagatan 20</h2>
+              <div class="info-facts">
+                <span>9 500 000 kr</span>
+                <span>101 kvm</span>
+                <span><i class="far fa-building"></i>6 rum</span>
+              </div>
+            </div>
+          </div>
+          <div class="result">result</div>
+          <div class="result">result</div>
+        </div>
+        <div class="pagination">
+          <div class="page-prev page-btn">
+            <i class="fas fa-angle-double-left"></i>
+            Föregående
+          </div>
+          <div class="page-num">1</div>
+          <div class="page-num">2</div>
+          <div class="page-num">3</div>
+          <div class="page-next page-btn">
+            Nästa
+            <i class="fas fa-angle-double-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">Footer</footer>
+  </body>
+</html>

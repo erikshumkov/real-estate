@@ -1,0 +1,49 @@
+#filter-section {
+  padding: 30px 0;
+  background: #eee;
+  .wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    .filter-search {
+      margin-bottom: 1.5rem;
+      form {
+        #search {
+          color: black;
+          font-size: 1.1rem;
+          font-family: 'Roboto Slab', serif;
+          font-weight: 400;
+          padding: 20px;
+          width: 100%;
+          border: none;
+          outline: none;
+          box-shadow: 0px 7px 14px -10px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+    .filter-menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      .filter-box {
+        padding: 20px;
+        border: 1px solid lightgrey;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+        color: rgb(126, 126, 126);
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        &:hover {
+          cursor: pointer;
+          border-color: black;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: rgb(61, 61, 61);
+}
